@@ -1,83 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Closet Hub</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #1c1832;
-      color: #fff;
-    }
-    header {
-      background-color: #2a2640;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid gold;
-    }
-    header h1 {
-      color: gold;
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 5px;
-      color: #ddd;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 40px;
-      justify-content: center;
-    }
-    .product {
-      background-color: #2f2b4a;
-      border: 1px solid #444;
-      border-radius: 15px;
-      padding: 15px;
-      width: 220px;
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .product h3 {
-      color: gold;
-      margin: 10px 0 5px 0;
-    }
-    .product p {
-      color: #ccc;
-      font-size: 0.9em;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Closet Hub</h1>
-    <p>Your Style Destination</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
-  <section class="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/200x250.png?text=Denim+Jacket" alt="Denim Jacket">
-      <h3>Denim Jacket</h3>
-      <p>Pre-loved | Tk 450</p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/200x250.png?text=Printed+Kurti" alt="Printed Kurti">
-      <h3>Printed Kurti</h3>
-      <p>Brand New | Tk 580</p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/200x250.png?text=Classic+Shirt" alt="Classic Shirt">
-      <h3>Classic Shirt</h3>
-      <p>Pre-loved | Tk 300</p>
-    </div>
-  </section>
+
+  <main>
+    <section>
+      <h2>Connect With Us</h2>
+      <p>Follow us on social media:</p>
+      <ul>
+        <li><a href="https://instagram.com/closethubbd" target="_blank">Instagram</a></li>
+        <li><a href="https://facebook.com/closethubbd" target="_blank">Facebook</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Closet Hub. All rights reserved.</p>
+  </footer>
 </body>
 </html>
